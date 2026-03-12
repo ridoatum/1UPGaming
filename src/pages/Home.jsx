@@ -22,7 +22,7 @@ const FEATURES = [
 ]
 
 const STEPS = [
-  { num: '01', title: 'Browse', desc: 'Explore our library of 30+ PS5 titles across all genres.' },
+  { num: '01', title: 'Browse', desc: 'Explore our library of 32 PS5 titles across all genres.' },
   { num: '02', title: 'Book', desc: 'Fill the booking form with your details and preferred dates.' },
   { num: '03', title: 'Verify KYC', desc: 'Submit Aadhaar & PAN for secure identity verification.' },
   { num: '04', title: 'Play!', desc: 'Get the game delivered and start playing the same day.' },

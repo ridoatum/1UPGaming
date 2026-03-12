@@ -1,16 +1,60 @@
-# React + Vite
+# 1UP Gaming — PS5 Rental App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web app for **1UP Gaming**, a PS5 game rental service operating in **Itanagar, Naharlagun & Nirjuli, Arunachal Pradesh, India**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎮 **Games Library** — 32 PS5 titles across 8 genres (Action, Adventure, RPG, Sports, Racing, Horror, Fighting, Thriller) with search and genre filters
+- 📋 **Online Booking** — Simple booking form with rental duration and start date selection
+- 🔒 **KYC Verification** — Aadhaar card number + PAN card number validation with photo upload
+- 📍 **Location Sharing** — Share live GPS location via WhatsApp for easy delivery coordination
+- 💬 **WhatsApp Integration** — Bookings are submitted directly as a WhatsApp message (no backend needed)
+- 📱 **Mobile-First** — Fully responsive design optimised for smartphones
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React](https://react.dev/) + [Vite](https://vite.dev/)
+- [React Router](https://reactrouter.com/) for client-side routing
+- [Tailwind CSS v4](https://tailwindcss.com/) for styling
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Configuration
+
+Before going live, update your WhatsApp number in **`src/constants.js`**:
+
+```js
+// Replace with your actual number (country code + number, no spaces or dashes)
+export const WHATSAPP_NUMBER = '919876543210'  // Example: +91 98765 43210
+```
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+The optimised output will be in the `dist/` folder. Deploy it to any static host (Netlify, Vercel, GitHub Pages, etc.).
+
+## Areas Served
+
+- **Itanagar** — State Capital
+- **Naharlagun** — Including New Colony & IG Park area
+- **Nirjuli** — Town and surrounding areas
+
+## Pricing (configurable in `src/data/games.js`)
+
+| Duration | Price |
+|----------|-------|
+| 1 Day    | ₹200  |
+| 2 Days   | ₹350  |
+| 3 Days   | ₹500  |
+| 1 Week   | ₹800  |
+
